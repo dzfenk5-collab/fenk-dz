@@ -58,7 +58,6 @@ jobs:
           PROJECT_ROOT="$(dirname "$INDEX_FILE")"
           echo "Project root: $PROJECT_ROOT"
 
-          # Remove the old website files but keep GitHub configuration.
           find . -mindepth 1 -maxdepth 1 \
             ! -name '.git' \
             ! -name '.github' \
@@ -66,10 +65,8 @@ jobs:
             ! -name '*.zip' \
             -exec rm -rf {} +
 
-          # Copy the extracted project to the repository root.
           cp -a "$PROJECT_ROOT"/. .
 
-          # Remove temporary files and the uploaded ZIP.
           rm -rf _fenk_extract
           find . -type f -iname '*.zip' -delete
 
@@ -82,8 +79,6 @@ jobs:
           fi
 
           echo "FENK project is ready."
-          echo "Root files:"
-          ls -la
 
       - name: Commit extracted project
         shell: bash
