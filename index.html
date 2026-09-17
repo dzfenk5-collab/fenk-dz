@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071516" />
+  <title>FENK DZ — شحن الألعاب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="FENK DZ">
+      <span class="fox">🦊</span><span class="brand-text">FENK <b>DZ</b><small>شحن الألعاب</small></span>
+    </a>
+    <nav class="main-nav" aria-label="التنقل">
+      <a class="active" href="#home">⌂<span>الرئيسية</span></a>
+      <a href="#games">🎮<span>جميع الألعاب</span></a>
+      <a href="#offers">◇<span>العروض</span></a>
+      <a href="#help">?<span>مركز المساعدة</span></a>
+      <a href="#contact">☎<span>تواصل معنا</span></a>
+    </nav>
+    <div class="actions">
+      <div class="search"><input id="search" placeholder="ابحث عن لعبتك ..." aria-label="بحث"><span>⌕</span></div>
+      <button class="icon-btn" type="button" title="حسابي">♙<span>حسابي</span></button>
+      <button class="icon-btn cart" type="button" title="السلة">🛒<i id="cartCount">0</i></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="ticker"><span>شحن سريع وآمن للألعاب في الجزائر</span><span>الدفع عبر بريد موب فقط</span><span>دعم فني متواصل</span></div>
+
+    <section class="hero">
+      <div class="hero-art art-one"></div><div class="hero-art art-two"></div>
+      <div class="hero-copy"><div class="hero-logo">FENK <b>DZ</b></div><h1>اشحن لعبتك <b>بسهولة وسرعة</b></h1><p>شحن آمن لأشهر الألعاب في الجزائر</p><div class="hero-buttons"><a href="#games">ابدأ الشحن الآن</a><a class="ghost" href="#how">كيف يعمل؟</a></div></div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-head"><h2>اختر لعبتك</h2><span>الألعاب المتاحة</span></div>
+      <div class="game-strip" id="gameStrip"></div>
+    </section>
+
+    <section class="checkout-layout" id="checkout">
+      <div class="checkout-card">
+        <div class="game-title-row"><div class="game-cover" id="selectedCover"></div><div><h2 id="selectedGame">PUBG Mobile</h2><p id="selectedDescription">اشحن شدات ببجي موبايل</p></div><button class="info-btn" type="button">ⓘ معلومات اللعبة</button></div>
+        <div class="step"><span>1</span><div class="step-body"><h3>اختر الباقة المناسبة</h3><div class="packages" id="packages"></div></div></div>
+        <div class="step"><span>2</span><div class="step-body"><h3>أدخل معلومات الحساب</h3><label class="field"><span>Player ID</span><input id="playerId" inputmode="numeric" placeholder="أدخل Player ID الخاص بك"></label><button class="find-id" type="button">أين أجد Player ID ؟</button></div></div>
+        <button class="primary-btn" id="chargeBtn" type="button">⚡ اشحن الآن</button>
+      </div>
+
+      <aside class="payment-card" id="payment">
+        <h2>طريقة الدفع المتاحة</h2>
+        <div class="barid"><div class="barid-mark">بريد موب</div><span>✓</span></div>
+        <h3>خطوات الدفع عبر بريد موب</h3>
+        <ol><li>اختر الباقة وأدخل معلوماتك</li><li>قم بالدفع عبر تطبيق بريد موب</li><li>ارفع صورة إثبات الدفع</li><li>سيتم شحن طلبك بعد التأكيد</li></ol>
+        <label class="upload"><input id="proof" type="file" accept="image/*"><strong>رفع إثبات الدفع</strong><small>صورة واضحة لعملية الدفع</small></label>
+        <div class="secure">◈ <span>دفع آمن وموثوق<br><small>عبر بريد موب فقط</small></span></div>
+      </aside>
+    </section>
+
+    <section class="trust-row" id="offers"><div>🚚 <b>تسليم سريع</b><span>في جميع ولايات الجزائر</span></div><div>◇ <b>منتجات أصلية</b><span>100%</span></div><div>♧ <b>دعم فني متواصل</b><span>خدمة مستمرة</span></div><div>🎁 <b>عروض وخصومات</b><span>مستمرة</span></div><div>♡ <b>أكثر من</b><span>100,000 عميل راضي</span></div></section>
+
+    <section class="how" id="how"><div><span>01</span><h2>اختر اللعبة والباقة</h2><p>حدد اللعبة ثم اختر الباقة التي تريدها.</p></div><div><span>02</span><h2>أدخل Player ID</h2><p>أدخل المعرّف الصحيح لحسابك.</p></div><div><span>03</span><h2>ادفع عبر بريد موب</h2><p>أرسل إثبات الدفع من نفس الصفحة.</p></div><div><span>04</span><h2>استلم الشحن</h2><p>يتم مراجعة الطلب ثم تنفيذ الشحن.</p></div></section>
+  </main>
+
+  <footer id="contact"><div class="footer-brand"><div class="brand"><span class="fox">🦊</span><span class="brand-text">FENK <b>DZ</b><small>شحن الألعاب</small></span></div><p>كل ما تحتاجه — مكان واحد</p></div><div><h3>روابط سريعة</h3><a href="#home">الرئيسية</a><a href="#games">جميع الألعاب</a><a href="#offers">العروض</a><a href="#help">مركز المساعدة</a></div><div><h3>سياسات المتجر</h3><a href="#">سياسة الخصوصية</a><a href="#">شروط الاستخدام</a><a href="#">سياسة الاسترداد</a><a href="#contact">اتصل بنا</a></div><div><h3>تابعنا على</h3><div class="social"><a href="#">TikTok</a><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div></div><div><h3>طرق الدفع المتاحة</h3><div class="barid footer-barid">بريد موب فقط</div></div><small class="copyright">© 2026 FENK DZ — جميع الحقوق محفوظة</small></footer>
+
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-box"><button class="close" id="closeModal">×</button><h2>تأكيد الطلب</h2><p id="summary"></p><button class="primary-btn" id="confirmBtn">إرسال الطلب</button></div></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
